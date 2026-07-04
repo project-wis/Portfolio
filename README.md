@@ -1,34 +1,57 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Project WIS — Web & Internet Solutions
+
+This is the portfolio and landing page for **Project WIS**, a development studio that designs and builds custom platforms end-to-end, from first sketch to deployed product.
+
+## Features
+
+- **Dark-themed UI**: Modern aesthetic with glassmorphism effects and custom color tokens.
+- **Pipeline Animation**: Custom CSS animations illustrating the `schema.build` process (Idea → Design → Build → Ship).
+- **Responsive Design**: Built to adapt cleanly across mobile and desktop breakpoints.
+- **Next.js 16**: Ported from static HTML to a modern Next.js App Router application.
+- **Static Generation**: Optimized for fast delivery as static content.
+
+## Tech Stack
+
+- **Framework**: [Next.js](https://nextjs.org/) (App Router)
+- **Styling**: Vanilla CSS with custom properties (`app/globals.css`)
+- **Fonts**: Space Grotesk, Inter, JetBrains Mono (via Google Fonts)
+- **Language**: TypeScript
 
 ## Getting Started
 
-First, run the development server:
+First, install the dependencies:
+
+```bash
+npm install
+```
+
+Then, run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Building for Production
 
-## Learn More
+To create an optimized production build:
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+npm run build
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+This will generate static HTML/CSS/JS assets ready for deployment.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Agentation Integration
 
-## Deploy on Vercel
+This project includes [Agentation](https://www.agentation.com/) as a dev-dependency to provide visual feedback for AI coding agents. The integration component is conditionally rendered in the root layout during development. 
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Ponytail Integration
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This project supports the [Ponytail](https://github.com/DietrichGebert/ponytail) AI agent plugin to enforce the YAGNI principle during development. Note that Ponytail is installed into your AI coding tool (e.g., Claude Code), not directly into this repository.
+
+## Contact & Links
+
+- **Email**: hello.projectwis@gmail.com
+- **GitHub**: [project-wis](https://github.com/project-wis)
