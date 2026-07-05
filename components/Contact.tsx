@@ -26,8 +26,8 @@ export default function Contact() {
   return (
     <section id="contact">
       <div className="wrap">
-        <div className="contact-box" style={{ textAlign: 'left' }}>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '48px', alignItems: 'center', position: 'relative', zIndex: 10 }}>
+        <div className="contact-box">
+          <div className="contact-grid">
             
             {/* Left Column */}
             <div>
@@ -49,7 +49,7 @@ export default function Contact() {
                 </p>
               </div>
               
-              <div className="contact-links" style={{ justifyContent: 'flex-start' }}>
+              <div className="contact-links">
                 <a
                   className="btn-secondary"
                   href="mailto:hello.projectwis@gmail.com"
@@ -69,7 +69,7 @@ export default function Contact() {
 
             {/* Right Column (Form) */}
             <div>
-              <form onSubmit={onSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '16px', background: 'rgba(14, 22, 38, 0.5)', padding: '32px', borderRadius: '8px', border: '1px solid var(--line)' }}>
+              <form onSubmit={onSubmit} className="contact-form">
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '6px' }}>
                   <label htmlFor="name" style={{ fontSize: '13px', color: 'var(--muted)', fontFamily: "'JetBrains Mono', monospace" }}>Name</label>
                   <input type="text" name="name" id="name" required style={{ padding: '12px 16px', borderRadius: '4px', border: '1px solid var(--line)', background: 'var(--panel-2)', color: 'var(--text)', outline: 'none', fontFamily: 'inherit' }} />
