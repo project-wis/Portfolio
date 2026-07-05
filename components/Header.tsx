@@ -1,10 +1,13 @@
+import Logo from "./Logo";
+
 export default function Header() {
   return (
     <header>
       <nav>
-        <div className="brand">
-          <span className="dot"></span>PROJECT WIS
-        </div>
+        <a href="#" className="brand" style={{ gap: '12px' }}>
+          <Logo style={{ height: '56px', width: 'auto', borderRadius: '12px' }} />
+          <span>PROJECT WIS</span>
+        </a>
         <div className="navlinks">
           <a href="#build">What We Build</a>
           <a href="#work">Work</a>
