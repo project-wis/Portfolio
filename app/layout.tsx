@@ -1,14 +1,29 @@
 import type { Metadata } from "next";
+import { JetBrains_Mono, Inter } from "next/font/google";
 import "./globals.css";
+
+const jetbrainsMono = JetBrains_Mono({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-mono",
+  display: "swap",
+});
+
+const inter = Inter({
+  subsets: ["latin"],
+  weight: ["400", "500", "600"],
+  variable: "--font-body",
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   title: "Project WIS — Web & Internet Solutions",
   description:
-    "Project WIS builds custom web platforms — learning systems, ordering systems, review systems — from idea to deployed product.",
+    "Project WIS builds custom web platforms — LMS, ordering systems, review systems, and full-stack applications — from architecture to deployment.",
   openGraph: {
     title: "Project WIS — Web & Internet Solutions",
     description:
-      "Project WIS builds custom web platforms — learning systems, ordering systems, review systems — from idea to deployed product.",
+      "Project WIS builds custom web platforms — LMS, ordering systems, review systems, and full-stack applications — from architecture to deployment.",
     type: "website",
   },
 };
@@ -19,19 +34,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link
-          rel="preconnect"
-          href="https://fonts.gstatic.com"
-          crossOrigin="anonymous"
-        />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
-          rel="stylesheet"
-        />
-      </head>
+    <html lang="en" className={`${jetbrainsMono.variable} ${inter.variable}`}>
       <body suppressHydrationWarning>{children}</body>
     </html>
   );

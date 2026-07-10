@@ -4,8 +4,10 @@ export default function Header() {
   return (
     <header>
       <nav>
-        <a href="#" className="brand" style={{ gap: '12px' }}>
-          <Logo style={{ height: '56px', width: 'auto', borderRadius: '12px' }} />
+        <a href="#" className="brand">
+          <Logo
+            style={{ height: "48px", width: "auto", borderRadius: "10px" }}
+          />
           <span>PROJECT WIS</span>
         </a>
         <div className="navlinks">

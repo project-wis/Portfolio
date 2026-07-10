@@ -10,7 +10,7 @@ export default function Stack() {
     <section id="stack">
       <div className="wrap">
         <div className="section-head">
-          <div className="section-eyebrow">The Stack</div>
+          <div className="section-eyebrow">// the stack</div>
           <h2>What&apos;s under the hood</h2>
           <p className="section-sub">
             The same core stack, adapted to what each project actually needs.
@@ -20,10 +20,10 @@ export default function Stack() {
           {layers.map((layer) => (
             <div className="layer" key={layer.label}>
               <div>
-                <span className="llabel">{layer.label}</span>
-                <div className="lname">{layer.name}</div>
+                <span className="layer-label">{layer.label}</span>
+                <div className="layer-name">{layer.name}</div>
               </div>
-              <div className="ltech">{layer.tech}</div>
+              <div className="layer-tech">{layer.tech}</div>
             </div>
           ))}
         </div>

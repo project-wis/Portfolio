@@ -3,25 +3,25 @@ const services = [
     tag: "LMS",
     title: "Learning Platforms",
     description:
-      "Course architecture, progress tracking, and content delivery — built to handle real student load, not just a demo.",
+      "Course architecture, progress tracking, content delivery built for real student load.",
   },
   {
     tag: "ORDER",
     title: "Ordering & Menu Systems",
     description:
-      "QR-based digital menus and order flows for restaurants and retail, with real-time updates on the kitchen side.",
+      "QR-based digital menus and order flows with real-time kitchen-side updates.",
   },
   {
     tag: "REVIEW",
     title: "Submission & Review Systems",
     description:
-      "Journal and peer-review platforms — separate applications for public submission and internal review, connected by API.",
+      "Journal and peer-review platforms, separate public/internal applications connected by API.",
   },
   {
     tag: "CUSTOM",
     title: "Custom Web Applications",
     description:
-      "Anything that doesn't fit a template: internal tools, dashboards, and full-stack products built from a blank page.",
+      "Internal tools, dashboards, full-stack products built from a blank page.",
   },
 ];
 
@@ -30,19 +30,15 @@ export default function WhatWeBuild() {
     <section id="build">
       <div className="wrap">
         <div className="section-head">
-          <div className="section-eyebrow">What We Build</div>
+          <div className="section-eyebrow">// what we build</div>
           <h2>Four kinds of systems, one approach</h2>
-          <p className="section-sub">
-            Every project starts the same way — understand how the people using
-            it actually work, then build the system around that.
-          </p>
         </div>
-        <div className="grid-4">
+        <div className="build-list">
           {services.map((service) => (
-            <div className="service-card" key={service.tag}>
-              <div className="icon-tag">{service.tag}</div>
-              <h3>{service.title}</h3>
-              <p>{service.description}</p>
+            <div className="build-row" key={service.tag}>
+              <span className="build-tag">{service.tag}</span>
+              <span className="build-title">{service.title}</span>
+              <span className="build-desc">{service.description}</span>
             </div>
           ))}
         </div>

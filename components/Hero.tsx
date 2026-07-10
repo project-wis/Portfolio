@@ -2,55 +2,70 @@ export default function Hero() {
   return (
     <section className="hero">
       <div className="hero-inner">
+        {/* Left column — terminal command + description + CTA */}
         <div>
-          <div className="eyebrow">Web &amp; Internet Solutions</div>
-          <h1>
-            We turn raw ideas into{" "}
-            <span className="accent">working systems.</span>
+          <h1 className="terminal-line">
+            <span className="terminal-prompt">$ </span>
+            <span className="terminal-cmd">build</span>{" "}
+            <span className="terminal-string">&quot;your idea&quot;</span>{" "}
+            <span className="terminal-flag">--ship</span>
           </h1>
-          <p className="lede">
-            Project WIS designs and builds custom platforms — learning systems,
-            ordering systems, review systems — end to end, from first sketch to
-            deployed product.
+          <p className="hero-desc">
+            Project WIS builds custom web platforms — LMS, ordering systems,
+            review systems — architected from scratch, not assembled from
+            templates.
           </p>
-          <div className="cta-row">
-            <a className="btn-primary" href="mailto:hello.projectwis@gmail.com">
-              hello.projectwis@gmail.com
-            </a>
-            <a className="btn-secondary" href="#work">
-              View the work →
-            </a>
-          </div>
+          <a className="btn-primary" href="mailto:hello.projectwis@gmail.com">
+            Start a project →
+          </a>
         </div>
-        <div className="diagram-box">
-          <div className="pipeline">
-            <div className="pipe-node">
-              <span className="num">01</span>
-              <div className="box">
-                <span className="tag">&gt;</span>Idea — scope the real problem
-              </div>
+
+        {/* Right column — file explorer window */}
+        <div className="explorer" role="img" aria-label="Project WIS file explorer showing active projects">
+          <div className="explorer-bar">
+            <div className="explorer-dots">
+              <span className="explorer-dot explorer-dot--red" />
+              <span className="explorer-dot explorer-dot--yellow" />
+              <span className="explorer-dot explorer-dot--green" />
             </div>
-            <div className="pipe-connector"></div>
-            <div className="pipe-node">
-              <span className="num">02</span>
-              <div className="box">
-                <span className="tag">&gt;</span>Design — data model &amp; flows
-              </div>
+            <span className="explorer-title">project-wis — explorer</span>
+          </div>
+          <div className="explorer-body">
+            <div className="file-folder">▾ project-wis/</div>
+            <div className="file-row">
+              <span>
+                <span className="file-name">lms</span>
+                <span className="file-ext--cyan">.system</span>
+              </span>
+              <span className="file-status">[live]</span>
             </div>
-            <div className="pipe-connector"></div>
-            <div className="pipe-node">
-              <span className="num">03</span>
-              <div className="box">
-                <span className="tag">&gt;</span>Build — full-stack
-                implementation
-              </div>
+            <div className="file-row">
+              <span>
+                <span className="file-name">ordering</span>
+                <span className="file-ext--cyan">.system</span>
+              </span>
+              <span className="file-status">[live]</span>
             </div>
-            <div className="pipe-connector"></div>
-            <div className="pipe-node">
-              <span className="num">04</span>
-              <div className="box">
-                <span className="tag">&gt;</span>Ship — deployed &amp; handed off
-              </div>
+            <div className="file-row">
+              <span>
+                <span className="file-name">review</span>
+                <span className="file-ext--cyan">.system</span>
+              </span>
+              <span className="file-status">[building]</span>
+            </div>
+            <div className="file-row">
+              <span>
+                <span className="file-name">privachat</span>
+                <span className="file-ext--amber">.app</span>
+              </span>
+              <span className="file-status">[prototype]</span>
+            </div>
+            <div className="file-row">
+              <span>
+                <span className="file-name">dphin</span>
+                <span className="file-ext--amber">.health</span>
+              </span>
+              <span className="file-status">[prototype]</span>
             </div>
           </div>
         </div>
