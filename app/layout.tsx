@@ -26,6 +26,9 @@ export const metadata: Metadata = {
       "Project WIS builds custom web platforms — LMS, ordering systems, review systems, and full-stack applications — from architecture to deployment.",
     type: "website",
   },
+  verification: {
+    google: "aGIjOe5giIjNubZCOwk9fsEAUWY1m7-6mNajaKXAmfY",
+  },
 };
 
 export default function RootLayout({

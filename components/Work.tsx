@@ -25,7 +25,7 @@ const projects = [
     title: "Digital Menu & Ordering System",
     status: "live" as const,
     statusLabel: "live",
-    url: "https://shahiawadh.vercel.app",
+    url: "https://shahiawadh.vercel.app/demo",
     displayUrl: "order.projectwis.app",
     description:
       "QR-based ordering system built for a restaurant — scan, browse, order, with real-time kitchen updates.",
