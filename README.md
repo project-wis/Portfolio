@@ -55,3 +55,5 @@ This project supports the [Ponytail](https://github.com/DietrichGebert/ponytail)
 
 - **Email**: hello.projectwis@gmail.com
 - **GitHub**: [project-wis](https://github.com/project-wis)
+- **Live**: [project-wis](https://projectwis.vercel.app)
+
