@@ -1,13 +1,11 @@
 import type { MetadataRoute } from "next";
 
-export const dynamic = "force-static";
-
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://projectwis.vercel.app";
   return [
     {
       url: `${baseUrl}/`,
-      lastModified: new Date(),
+      lastModified: "2026-07-19",
       changeFrequency: "monthly",
       priority: 1,
     },

@@ -18,6 +18,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://projectwis.vercel.app"),
   title: "Project WIS — Web & Internet Solutions",
   description:
     "Project WIS builds custom web platforms — LMS, ordering systems, review systems, and full-stack applications — from architecture to deployment.",
@@ -45,10 +46,15 @@ export const metadata: Metadata = {
     "bespoke software development",
     "web engineering services",
   ],
+  alternates: {
+    canonical: "https://projectwis.vercel.app/",
+  },
   openGraph: {
     title: "Project WIS — Web & Internet Solutions",
     description:
       "Project WIS builds custom web platforms — LMS, ordering systems, review systems, and full-stack applications — from architecture to deployment.",
+    url: "https://projectwis.vercel.app/",
+    siteName: "Project WIS",
     type: "website",
   },
   verification: {
